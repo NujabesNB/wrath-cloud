@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="wrath-commons-lock" />
+        <module name="wrath-devtools" />
+        <module name="wrath-api-client" />
+        <module name="wrath-commons-dynamic-datasource" />
+        <module name="wrath-seata-order" />
+        <module name="wrath-admin-client" />
+        <module name="wrath-commons-security" />
+        <module name="wrath-api-server" />
+        <module name="wrath-commons-swagger" />
+        <module name="wrath-oss-client" />
+        <module name="wrath-commons-tools" />
+        <module name="wrath-admin-server" />
+        <module name="wrath-oss-server" />
+        <module name="wrath-message-server" />
+        <module name="wrath-auth" />
+        <module name="wrath-gateway" />
+        <module name="wrath-activiti-server" />
+        <module name="wrath-monitor" />
+        <module name="wrath-xxl-job" />
+        <module name="wrath-seata-storage" />
+        <module name="wrath-job-server" />
+        <module name="wrath-commons-log" />
+        <module name="wrath-message-client" />
+        <module name="wrath-job-client" />
+        <module name="wrath-activiti-client" />
+        <module name="wrath-commons-xxl-job" />
+        <module name="wrath-commons-mybatis" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="wrath-activiti-client" options="-parameters" />
+      <module name="wrath-activiti-server" options="-parameters" />
+      <module name="wrath-admin-client" options="-parameters" />
+      <module name="wrath-admin-server" options="-parameters" />
+      <module name="wrath-api-client" options="-parameters" />
+      <module name="wrath-api-server" options="-parameters" />
+      <module name="wrath-auth" options="-parameters" />
+      <module name="wrath-commons-dynamic-datasource" options="-parameters" />
+      <module name="wrath-commons-lock" options="-parameters" />
+      <module name="wrath-commons-log" options="-parameters" />
+      <module name="wrath-commons-mybatis" options="-parameters" />
+      <module name="wrath-commons-security" options="-parameters" />
+      <module name="wrath-commons-swagger" options="-parameters" />
+      <module name="wrath-commons-tools" options="-parameters" />
+      <module name="wrath-commons-xxl-job" options="-parameters" />
+      <module name="wrath-devtools" options="-parameters" />
+      <module name="wrath-gateway" options="-parameters" />
+      <module name="wrath-job-client" options="-parameters" />
+      <module name="wrath-job-server" options="-parameters" />
+      <module name="wrath-message-client" options="-parameters" />
+      <module name="wrath-message-server" options="-parameters" />
+      <module name="wrath-monitor" options="-parameters" />
+      <module name="wrath-oss-client" options="-parameters" />
+      <module name="wrath-oss-server" options="-parameters" />
+      <module name="wrath-seata-order" options="-parameters" />
+      <module name="wrath-seata-storage" options="-parameters" />
+      <module name="wrath-xxl-job" options="-parameters" />
+    </option>
+  </component>
+</project>

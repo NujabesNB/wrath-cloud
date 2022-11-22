@@ -1,0 +1,56 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: wrath-gateway-server
+  #环境 dev|test|prod
+  profiles:
+    active: dev
+  messages:
+    encoding: UTF-8
+    basename: i18n/messages_common
+  cloud:
+    nacos:
+      discovery:
+        metadata:
+          management:
+            context-path: /actuator
+        server-addr: ${nacos-host:nacos-host}:${nacos-port:8848}
+        #nacos的命名空间ID，默认是public
+        namespace: ${nacos-namespace:}
+      config:
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        namespace: ${spring.cloud.nacos.discovery.namespace}
+        group: WRATH_CLOUD_GROUP
+        file-extension: yaml
+        #指定共享配置，且支持动态刷新
+        extension-configs:
+          - data-id: datasource.yaml
+            group: ${spring.cloud.nacos.config.group}
+            refresh: true
+          - data-id: common.yaml
+            group: ${spring.cloud.nacos.config.group}
+            refresh: true
+    gateway:
+      locator:
+        enabled: true
+
+
+wrath:
+  swagger: #聚合文档配置
+    routes:
+      - name: 认证服务
+        location: /auth
+      - name: Admin服务
+        location: /sys
+      - name: OSS服务
+        location: /oss
+      - name: 消息服务
+        location: /message
+      - name: 工作流服务
+        location: /activiti
+      - name: 定时任务服务
+        location: /job
+      - name: APP流服务
+        location: /api

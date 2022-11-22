@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>persional.wrath</groupId>
+		<artifactId>wrath-cloud-tenant</artifactId>
+		<version>3.2.0</version>
+	</parent>
+
+	<groupId>persional.wrath</groupId>
+	<artifactId>wrath-module</artifactId>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>wrath-oss</module>
+		<module>wrath-job</module>
+		<module>wrath-xxl-job</module>
+		<module>wrath-message</module>
+		<module>wrath-activiti</module>
+		<module>wrath-api</module>
+		<module>wrath-seata</module>
+		<module>wrath-devtools</module>
+	</modules>
+
+</project>

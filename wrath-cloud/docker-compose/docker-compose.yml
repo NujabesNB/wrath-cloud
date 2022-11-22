@@ -1,0 +1,147 @@
+version: '3.3'
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.5.0
+    container_name: elasticsearch
+    restart: always
+    ports:
+      - 9200:9200
+    environment:
+      - discovery.type=single-node
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+  skywalking-oap:
+    image: apache/skywalking-oap-server:6.6.0-es7
+    container_name: skywalking-oap
+    depends_on:
+      - elasticsearch
+    links:
+      - elasticsearch
+    restart: always
+    ports:
+      - 11800:11800
+      - 12800:12800
+    environment:
+      - SW_STORAGE=elasticsearch
+      - SW_STORAGE_ES_CLUSTER_NODES=elasticsearch:9200
+  skywalking-ui:
+    image: apache/skywalking-ui:6.6.0
+    container_name: skywalking-ui
+    depends_on:
+      - skywalking-oap
+    links:
+      - skywalking-oap
+    restart: always
+    ports:
+      - 8480:8080
+    environment:
+      - SW_OAP_ADDRESS=skywalking-oap:12800
+  wrath-monitor:
+    image: wrath_io:2.0
+    container_name: wrath-monitor
+    env_file:
+      - common.env
+    volumes:
+      - /data/wrath-cloud/wrath-monitor.jar:/app/app.jar
+  wrath-gateway:
+    image: wrath_io:2.0
+    container_name: wrath-gateway
+    ports:
+      - "8080:8080"
+    links:
+      - skywalking-oap
+    environment:
+      - SW_AGENT_NAME=wrath-gateway
+      - SW_AGENT_COLLECTOR_BACKEND_SERVICES=skywalking-oap:11800
+    env_file:
+      - common.env
+    volumes:
+      - /data/wrath-cloud/wrath-gateway.jar:/app/app.jar
+  wrath-auth:
+    image: wrath_io:2.0
+    container_name: wrath-auth
+    links:
+      - skywalking-oap
+    environment:
+      - SW_AGENT_NAME=wrath-auth
+      - SW_AGENT_COLLECTOR_BACKEND_SERVICES=skywalking-oap:11800
+    env_file:
+      - common.env
+    volumes:
+      - /data/wrath-cloud/wrath-auth.jar:/app/app.jar
+  wrath-admin:
+    image: wrath_io:2.0
+    container_name: wrath-admin-server
+    links:
+      - skywalking-oap
+    environment:
+      - SW_AGENT_NAME=wrath-admin
+      - SW_AGENT_COLLECTOR_BACKEND_SERVICES=skywalking-oap:11800
+    env_file:
+      - common.env
+    volumes:
+      - /data/wrath-cloud/wrath-admin-server.jar:/app/app.jar
+  wrath-oss:
+    image: wrath_io:2.0
+    container_name: wrath-oss-server
+    links:
+      - skywalking-oap
+    environment:
+      - SW_AGENT_NAME=wrath-oss-server
+      - SW_AGENT_COLLECTOR_BACKEND_SERVICES=skywalking-oap:11800
+    env_file:
+      - common.env
+    volumes:
+      - /data/wrath-cloud/wrath-oss-server.jar:/app/app.jar
+  wrath-job:
+    image: wrath_io:2.0
+    container_name: wrath-job-server
+    links:
+      - skywalking-oap
+    environment:
+      - SW_AGENT_NAME=wrath-job-server
+      - SW_AGENT_COLLECTOR_BACKEND_SERVICES=skywalking-oap:11800
+    env_file:
+      - common.env
+    volumes:
+      - /data/wrath-cloud/wrath-job-server.jar:/app/app.jar
+  wrath-message:
+    image: wrath_io:2.0
+    container_name: wrath-message-server
+    links:
+      - skywalking-oap
+    environment:
+      - SW_AGENT_NAME=wrath-message-server
+      - SW_AGENT_COLLECTOR_BACKEND_SERVICES=skywalking-oap:11800
+    env_file:
+      - common.env
+    volumes:
+      - /data/wrath-cloud/wrath-message-server.jar:/app/app.jar
+  wrath-activiti:
+    image: wrath_io:2.0
+    container_name: wrath-activiti-server
+    links:
+      - skywalking-oap
+    environment:
+      - SW_AGENT_NAME=wrath-activiti-server
+      - SW_AGENT_COLLECTOR_BACKEND_SERVICES=skywalking-oap:11800
+    env_file:
+      - common.env
+    volumes:
+      - /data/wrath-cloud/wrath-activiti-server.jar:/app/app.jar
+  wrath-api:
+    image: wrath_io:2.0
+    container_name: wrath-api-server
+    links:
+      - skywalking-oap
+    environment:
+      - SW_AGENT_NAME=wrath-api-server
+      - SW_AGENT_COLLECTOR_BACKEND_SERVICES=skywalking-oap:11800
+    env_file:
+      - common.env
+    volumes:
+      - /data/wrath-cloud/wrath-api-server.jar:/app/app.jar

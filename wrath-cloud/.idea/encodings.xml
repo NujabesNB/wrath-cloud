@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-admin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-admin/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-admin/wrath-admin-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-admin/wrath-admin-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-auth/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-commons/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-commons/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-commons/wrath-commons-dependencies/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-commons/wrath-commons-dependencies/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-commons/wrath-commons-dynamic-datasource/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-commons/wrath-commons-lock/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-commons/wrath-commons-log/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-commons/wrath-commons-mybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-commons/wrath-commons-security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-commons/wrath-commons-swagger/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-commons/wrath-commons-tools/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-commons/wrath-commons-xxl-job/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-module/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-module/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-module/wrath-activiti/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-module/wrath-activiti/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-module/wrath-activiti/wrath-activiti-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-module/wrath-activiti/wrath-activiti-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-module/wrath-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-module/wrath-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-module/wrath-api/wrath-api-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-module/wrath-api/wrath-api-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-module/wrath-devtools/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-module/wrath-job/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-module/wrath-job/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-module/wrath-job/wrath-job-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-module/wrath-job/wrath-job-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-module/wrath-message/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-module/wrath-message/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-module/wrath-message/wrath-message-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-module/wrath-message/wrath-message-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-module/wrath-oss/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-module/wrath-oss/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-module/wrath-oss/wrath-oss-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-module/wrath-oss/wrath-oss-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-module/wrath-seata/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-module/wrath-seata/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-module/wrath-seata/wrath-seata-order/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-module/wrath-seata/wrath-seata-storage/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-module/wrath-xxl-job/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wrath-monitor/src/main/java" charset="UTF-8" />
+  </component>
+</project>
