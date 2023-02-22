@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>persional.wrath</groupId>
+        <groupId>personal.wrath</groupId>
         <artifactId>wrath-api</artifactId>
         <version>3.2.0</version>
     </parent>
@@ -14,21 +14,21 @@
 
     <dependencies>
         <dependency>
-            <groupId>persional.wrath</groupId>
+            <groupId>personal.wrath</groupId>
             <artifactId>wrath-oss-client</artifactId>
             <version>${wrath.cloud.version}</version>
         </dependency>
         <dependency>
-            <groupId>persional.wrath</groupId>
+            <groupId>personal.wrath</groupId>
             <artifactId>wrath-api-client</artifactId>
             <version>${wrath.cloud.version}</version>
         </dependency>
         <dependency>
-            <groupId>persional.wrath</groupId>
+            <groupId>personal.wrath</groupId>
             <artifactId>wrath-commons-tools</artifactId>
         </dependency>
         <dependency>
-            <groupId>persional.wrath</groupId>
+            <groupId>personal.wrath</groupId>
             <artifactId>wrath-commons-mybatis</artifactId>
         </dependency>
         <dependency>

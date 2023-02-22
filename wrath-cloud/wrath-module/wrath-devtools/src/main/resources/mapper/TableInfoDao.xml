@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="persional.wrath.dao.TableInfoDao">
+<mapper namespace="personal.wrath.dao.TableInfoDao">
 
-    <select id="getByTableName" resultType="persional.wrath.entity.TableInfoEntity">
+    <select id="getByTableName" resultType="personal.wrath.entity.TableInfoEntity">
         select * from gen_table_info where table_name = #{value}
     </select>
 

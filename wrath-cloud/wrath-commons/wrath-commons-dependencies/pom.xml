@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>persional.wrath</groupId>
+    <groupId>personal.wrath</groupId>
     <artifactId>wrath-commons-dependencies</artifactId>
     <packaging>pom</packaging>
     <version>3.2.0</version>
@@ -51,42 +51,42 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>persional.wrath</groupId>
+                <groupId>personal.wrath</groupId>
                 <artifactId>wrath-commons-dynamic-datasource</artifactId>
                 <version>${wrath.cloud.version}</version>
             </dependency>
             <dependency>
-                <groupId>persional.wrath</groupId>
+                <groupId>personal.wrath</groupId>
                 <artifactId>wrath-commons-lock</artifactId>
                 <version>${wrath.cloud.version}</version>
             </dependency>
             <dependency>
-                <groupId>persional.wrath</groupId>
+                <groupId>personal.wrath</groupId>
                 <artifactId>wrath-commons-log</artifactId>
                 <version>${wrath.cloud.version}</version>
             </dependency>
             <dependency>
-                <groupId>persional.wrath</groupId>
+                <groupId>personal.wrath</groupId>
                 <artifactId>wrath-commons-mybatis</artifactId>
                 <version>${wrath.cloud.version}</version>
             </dependency>
             <dependency>
-                <groupId>persional.wrath</groupId>
+                <groupId>personal.wrath</groupId>
                 <artifactId>wrath-commons-security</artifactId>
                 <version>${wrath.cloud.version}</version>
             </dependency>
             <dependency>
-                <groupId>persional.wrath</groupId>
+                <groupId>personal.wrath</groupId>
                 <artifactId>wrath-commons-swagger</artifactId>
                 <version>${wrath.cloud.version}</version>
             </dependency>
             <dependency>
-                <groupId>persional.wrath</groupId>
+                <groupId>personal.wrath</groupId>
                 <artifactId>wrath-commons-tools</artifactId>
                 <version>${wrath.cloud.version}</version>
             </dependency>
             <dependency>
-                <groupId>persional.wrath</groupId>
+                <groupId>personal.wrath</groupId>
                 <artifactId>wrath-commons-xxl-job</artifactId>
                 <version>${wrath.cloud.version}</version>
             </dependency>

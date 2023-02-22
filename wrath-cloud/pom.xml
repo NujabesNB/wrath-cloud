@@ -9,7 +9,7 @@
 		<version>2.3.7.RELEASE</version>
 	</parent>
 
-	<groupId>persional.wrath</groupId>
+	<groupId>personal.wrath</groupId>
 	<artifactId>wrath-cloud-tenant</artifactId>
 	<version>3.2.0</version>
 	<packaging>pom</packaging>
@@ -57,7 +57,7 @@
 				<scope>import</scope>
 			</dependency>
 			<dependency>
-				<groupId>persional.wrath</groupId>
+				<groupId>personal.wrath</groupId>
 				<artifactId>wrath-commons-dependencies</artifactId>
 				<version>${wrath.cloud.version}</version>
 				<type>pom</type>

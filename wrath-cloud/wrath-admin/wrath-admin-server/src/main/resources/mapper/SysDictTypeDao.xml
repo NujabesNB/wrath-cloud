@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="persional.wrath.dao.SysDictTypeDao">
+<mapper namespace="personal.wrath.dao.SysDictTypeDao">
 
-    <select id="getDictTypeList" resultType="persional.wrath.entity.DictType">
+    <select id="getDictTypeList" resultType="personal.wrath.entity.DictType">
         select id, dict_type from sys_dict_type order by dict_type, sort
     </select>
 
